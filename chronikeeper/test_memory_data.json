@@ -1,0 +1,52 @@
+{
+  "skill_python_001": {
+    "event_id": "skill_python_001",
+    "summary": "Studied Python basics and fixed a stubborn bug.",
+    "tags": [
+      "skill:python",
+      "learning"
+    ],
+    "participants": [
+      "self"
+    ],
+    "location": "home",
+    "emotion_score": -0.3,
+    "importance": 1.0,
+    "memorable": false,
+    "core_memory": false,
+    "created_at": "2025-10-29T17:14:30.805368",
+    "accuracy": 1.0,
+    "frequency_count": 3,
+    "familiarity": 0.6658883083359672,
+    "last_occurrence": "2025-10-29T18:14:30.811353",
+    "skill_level_flag": "neutral",
+    "confidence": 0.5,
+    "last_decay_update": "2025-10-29T17:14:30.805368",
+    "last_recalled": null
+  },
+  "skill_guitar_001": {
+    "event_id": "skill_guitar_001",
+    "summary": "Played an easy song successfully.",
+    "tags": [
+      "skill:guitar",
+      "music"
+    ],
+    "participants": [
+      "self"
+    ],
+    "location": "studio",
+    "emotion_score": 0.4,
+    "importance": 1.0,
+    "memorable": false,
+    "core_memory": false,
+    "created_at": "2025-10-29T17:14:30.805368",
+    "accuracy": 1.0,
+    "frequency_count": 2,
+    "familiarity": 0.5295836866004329,
+    "last_occurrence": "2025-10-29T18:14:30.809345",
+    "skill_level_flag": "neutral",
+    "confidence": 0.5,
+    "last_decay_update": "2025-10-29T17:14:30.805368",
+    "last_recalled": null
+  }
+}
