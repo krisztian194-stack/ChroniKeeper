@@ -32,6 +32,11 @@ class MemoryEvent:
         self.importance = importance
         self.memorable = memorable
         self.core_memory = core_memory
+        # >>> SKILL TRACKING 001 <<< 
+        self.frequency_count = 1           # how many times this type of event has occurred
+        self.familiarity = 0.0             # normalized skill/familiarity metric (0-1)
+        self.last_occurrence = None        # store last timestamp for recency checks
+        # <<< END SKILL TRACKING 001 >>>
         self.frequency_count = 1
         self.last_recalled = None
         self.created_at = date_created or datetime.utcnow().isoformat()
@@ -55,6 +60,46 @@ class MemoryEvent:
         # print for debugging if accuracy changes significantly
         if abs(old_acc - self.accuracy) > 0.05:
             print(f"[DEBUG] Memory {self.event_id} decayed from {old_acc:.2f} → {self.accuracy:.2f}")
+        
+        # >>> SKILL TRACKING 002 <<< 
+        def reinforce(self, current_time=None):
+            """Increase frequency and update familiarity/skill metric"""
+            old_freq = self.frequency_count
+            self.frequency_count += 1
+            # normalize familiarity; avoids 0 so char never fully unprepared
+            self.familiarity = min(1.0, 0.2 + 0.3 * math.log1p(self.frequency_count))
+            if current_time:
+                self.last_occurrence = current_time
+            print(f"[DEBUG] Reinforced memory {self.event_id}: freq {old_freq}->{self.frequency_count}, familiarity {self.familiarity:.2f}")
+        # <<< END SKILL TRACKING 002 >>>
+
+        # >>> SKILL TRACKING 003 <<<
+        def readiness_score(self, personality_multiplier=1.0):
+            """
+            Combines familiarity, recency, and personality to estimate preparedness.
+            Returns 0..1 float.
+            """
+            time_factor = 1.0
+            if self.last_occurrence:
+                days_since = (datetime.now() - self.last_occurrence).days
+                time_factor = max(0.3, min(1.0, 1.0 - 0.01*days_since))
+            score = min(1.0, self.familiarity * personality_multiplier * time_factor)
+            return score
+        # <<< END SKILL TRACKING 003 >>>
+
+        # >>> SKILL TRACKING 004 <<<
+        def reinforce_by_tags(self, new_tags, current_time=None):
+            """Boost familiarity/skill for overlapping tag memories"""
+            matched = []
+            for mem in self.memories.values():
+                if any(tag in mem.tags for tag in new_tags):
+                    mem.reinforce(current_time=current_time)
+                    matched.append(mem.event_id)
+            if matched:
+                print(f"[INFO] Reinforced memories (skill) by tags: {matched}")
+                self.save()
+        # <<< END SKILL TRACKING 004 >>>
+
 
     # --------------------------------------------
     # Revival logic (called when memory is mentioned)
