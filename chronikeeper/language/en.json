@@ -1,0 +1,8 @@
+{
+  "welcome": "ChroniKeeper v0.2 — Core Engine Ready.",
+  "add_event": "New event stored successfully.",
+  "recall_none": "No memory found with that tag.",
+  "decay_cycle": "Time advanced by {days} day(s). Memory decay applied.",
+  "stats": "Total Memories: {count}, Avg Accuracy: {avg}",
+  "exit": "Exiting ChroniKeeper..."
+}
