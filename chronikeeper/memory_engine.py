@@ -162,6 +162,11 @@ class MemoryEngine:
     # ------------------------------
     # Add new memory
     # ------------------------------
+
+    # >>> SKILL TRACKING 005 <<<
+    self.reinforce_by_tags(event.tags, current_time=datetime.now())
+    # <<< END SKILL TRACKING 005 >>>
+
     def add_memory(self, event: MemoryEvent):
         self.memories[event.event_id] = event
         print(f"[INFO] Added memory '{event.event_id}' ({event.summary[:40]}...)")
