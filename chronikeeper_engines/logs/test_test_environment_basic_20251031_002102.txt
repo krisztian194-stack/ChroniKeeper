@@ -1,0 +1,5 @@
+=== Environment Basic Test ===
+[INFO] Loaded map: Test Neighborhood
+[MAP] You are at Your Apartment (home, indoor, safe). Nearby: street
+[ENV SIGNATURE] {'light': 0.8, 'noise': 0.5, 'crowd': 0.7, 'safety': 0.67, 'comfort': 0.6, 'visibility': 0.8, 'temperature': 0.6, 'air_quality': 0.5, 'mood_modifier': 0.128}
+[ENV TEXT] The place is bright, high and somewhat safe.

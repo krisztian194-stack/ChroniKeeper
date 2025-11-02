@@ -1,0 +1,1 @@
+[WARN] test_skills has no main() function.

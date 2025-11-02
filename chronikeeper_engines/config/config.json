@@ -1,0 +1,4 @@
+{
+  "world_template": "world_templates/earth_modern.json",
+  "species_file": "world_templates/species_modern.json"
+}

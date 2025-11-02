@@ -1,0 +1,28 @@
+{
+  "base_affinity": {
+    "neutral": 0.0,
+    "friendly": 0.5,
+    "trusted": 0.8,
+    "hostile": -0.6,
+    "enemy": -1.0
+  },
+  "emotion_modifiers": {
+    "helped": 0.2,
+    "insulted": -0.3,
+    "saved_life": 0.8,
+    "betrayed": -0.7,
+    "gift": 0.1,
+    "attack": -0.5
+  },
+  "decay_rate": {
+    "friendly": 0.001,
+    "trusted": 0.0005,
+    "hostile": 0.002
+  },
+  "context_bias": {
+    "crowd": -0.05,
+    "alone": 0.05,
+    "public": -0.02,
+    "private": 0.03
+  }
+}

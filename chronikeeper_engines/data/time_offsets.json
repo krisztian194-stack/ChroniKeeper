@@ -1,0 +1,6 @@
+{
+  "winter":  { "sunrise_shift":  0.8,  "sunset_shift": -0.8 },
+  "spring":  { "sunrise_shift":  0.2,  "sunset_shift": -0.2 },
+  "summer":  { "sunrise_shift": -0.8,  "sunset_shift":  0.8 },
+  "autumn":  { "sunrise_shift":  0.2,  "sunset_shift": -0.2 }
+}

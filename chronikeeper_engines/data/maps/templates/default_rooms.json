@@ -1,0 +1,7 @@
+{
+  "living_room": {"room_type": "living", "comfort_base": 0.8, "room_light": 0.6, "room_mod": 1.0, "tags": ["indoor"]},
+  "kitchen": {"room_type": "kitchen", "comfort_base": 0.7, "room_light": 0.5, "room_mod": 1.0, "tags": ["indoor"]},
+  "basement": {"room_type": "basement", "comfort_base": 0.4, "room_light": 0.05, "room_mod": 0.3, "tags": ["indoor"]},
+  "roof_terrace": {"room_type": "roof", "comfort_base": 0.6, "room_light": 0.0, "room_mod": 1.2, "tags": ["outdoor"]}
+}
+

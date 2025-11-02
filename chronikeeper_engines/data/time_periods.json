@@ -1,0 +1,22 @@
+{
+  "dawn": [4.5, 6.0],
+  "daybreak": [6.0, 7.0],
+  "sunrise": [7.0, 8.0],
+  "early_morning": [8.0, 9.5],
+  "morning": [9.5, 11.0],
+  "mid_morning": [11.0, 12.0],
+  "noon": [12.0, 13.0],
+  "early_afternoon": [13.0, 15.0],
+  "afternoon": [15.0, 16.5],
+  "late_afternoon": [16.5, 17.5],
+  "sunset": [17.5, 18.5],
+  "dusk": [18.5, 19.5],
+  "twilight": [19.5, 20.0],
+  "early_evening": [20.0, 21.0],
+  "evening": [21.0, 22.0],
+  "late_evening": [22.0, 23.0],
+  "night": [23.0, 24.0],
+  "midnight": [0.0, 1.0],
+  "late_night": [1.0, 3.0],
+  "after_midnight": [3.0, 4.0]
+}

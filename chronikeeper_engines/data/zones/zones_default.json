@@ -1,0 +1,60 @@
+{
+  "rural_low": {
+    "zone_type": "rural",
+    "density": 0.2,
+    "building_types": {
+      "farmhouse": 0.6,
+      "barn": 0.25,
+      "village_house": 0.15
+    },
+    "light_pollution": 0.03,
+    "comfort_base": 0.6,
+    "room_light_defaults": {
+      "indoor": 0.25,
+      "abandoned": 0.05
+    },
+    "room_count_range": [3, 5],
+    "landmarks": {
+      "old_well": { "chance": 0.15, "persistent": true, "radius": 1 }
+    }
+  },
+  "suburban_medium": {
+    "zone_type": "residential",
+    "density": 0.5,
+    "building_types": {
+      "family_home": 0.6,
+      "apartment_small": 0.25,
+      "shop": 0.15
+    },
+    "light_pollution": 0.25,
+    "comfort_base": 0.7,
+    "room_light_defaults": {
+      "indoor": 0.45,
+      "modern": 0.8
+    },
+    "room_count_range": [4, 7],
+    "landmarks": {
+      "neighborhood_park": { "chance": 0.3, "persistent": true, "radius": 2 }
+    }
+  },
+  "city_high": {
+    "zone_type": "urban",
+    "density": 0.9,
+    "building_types": {
+      "apartment_highrise": 0.5,
+      "office": 0.3,
+      "industrial": 0.2
+    },
+    "light_pollution": 0.85,
+    "comfort_base": 0.5,
+    "room_light_defaults": {
+      "indoor": 0.7,
+      "office": 0.9
+    },
+    "room_count_range": [8, 20],
+    "landmarks": {
+      "central_park": { "chance": 0.25, "persistent": true, "radius": 3 },
+      "fountain_square": { "chance": 0.22, "persistent": true, "radius": 1 }
+    }
+  }
+}

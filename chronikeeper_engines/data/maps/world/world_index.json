@@ -1,0 +1,7 @@
+{
+  "global": {
+    "country": "Hungary",
+    "climate_band": "temperate",
+    "sea_proximity": 0.2
+  }
+}

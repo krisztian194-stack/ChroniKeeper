@@ -1,0 +1,23 @@
+{
+  "environment": {
+    "base_comfort": {
+      "city": 0.1,
+      "forest": 0.2,
+      "cave": -0.3,
+      "house": 0.3,
+      "street": 0.0,
+      "desert": -0.2
+    },
+    "weather_mod": {
+      "rain": -0.2,
+      "storm": -0.3,
+      "fog": -0.1,
+      "snow": -0.15
+    },
+    "location_tags": {
+      "creepy": -0.4,
+      "peaceful": 0.2,
+      "crowded": -0.1
+    }
+  }
+}

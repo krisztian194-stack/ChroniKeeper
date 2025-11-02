@@ -1,0 +1,20 @@
+{
+  "skill_cook_001": {
+    "event_id": "skill_cook_001",
+    "summary": "Practiced cooking",
+    "tags": [
+      "skill:cooking"
+    ],
+    "created": null,
+    "last_reinforced": null,
+    "familiarity": 0.0,
+    "frequency_count": 0,
+    "difficulty": "normal",
+    "learning_profile": "baseline",
+    "max_skill_cap": 0.85,
+    "relearning_rate": 1.0,
+    "daily_variance": 0.03,
+    "learning_multiplier": 1.0,
+    "decay_multiplier": 1.0
+  }
+}

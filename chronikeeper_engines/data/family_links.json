@@ -1,0 +1,27 @@
+{
+  "fam_kovacs": {
+    "members": [
+      "npc_earth_MARIA",
+      "npc_earth_JANOS",
+      "npc_earth_LILI"
+    ],
+    "home_location": "apartment_block_3",
+    "generation": "parental"
+  },
+  "fam_smith": {
+    "members": [
+      "npc_earth_SMITH_MOM",
+      "npc_earth_SMITH_DAD"
+    ],
+    "home_location": "suburb_street_12",
+    "generation": "parental"
+  },
+  "fam_grand": {
+    "members": [
+      "npc_earth_GRANDMA",
+      "npc_earth_GRANDPA"
+    ],
+    "home_location": "village_house_1",
+    "generation": "elder"
+  }
+}

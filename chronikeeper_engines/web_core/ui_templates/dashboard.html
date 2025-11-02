@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ChroniKeeper Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>ChroniKeeper Diagnostic UI</h1>
+  <div id="state"></div>
+Advance:
+<select id="tickValue">
+  <option value="0.05">3 min</option>
+  <option value="0.5">30 min</option>
+  <option value="1.0">1 hour</option>
+  <option value="6.0">6 hours</option>
+</select>
+<button onclick="tick()">Advance</button>
+  <pre id="prompt"></pre>
+
+  <script>
+  async function refresh() {
+    const res = await fetch("/api/state");
+    const data = await res.json();
+    document.getElementById("state").innerText = JSON.stringify(data, null, 2);
+  } 
+
+  async function loadPrompt() {
+    const res = await fetch("/api/prompt");
+    const data = await res.json();
+    document.getElementById("prompt").innerText = data.prompt;
+  }
+
+  async function tick() {
+    const value = document.getElementById("tickValue").value;
+    await fetch(`/api/tick?hours=${value}`);
+    // ✅ refresh both state and prompt after time advances
+    await refresh();
+    await loadPrompt();
+  }
+
+  refresh();
+  loadPrompt();
+  </script>

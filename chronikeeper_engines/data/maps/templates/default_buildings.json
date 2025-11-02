@@ -1,0 +1,4 @@
+{
+  "small_house": {"name": "Small House", "style": "modern", "powered": true, "abandoned": false, "rooms": ["living_room", "kitchen", "basement"]},
+  "apartment_block": {"name": "Apartment Block", "style": "modern", "powered": true, "rooms": ["living_room", "roof_terrace"]}
+}

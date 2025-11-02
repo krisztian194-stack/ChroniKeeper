@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "F:\ai\SillyTavern-Launcher\SillyTavern\extensions\chronikeeper\chronikeeper\run_tests.py", line 73, in run_test
+    module.main()
+  File "F:\ai\SillyTavern-Launcher\SillyTavern\extensions\chronikeeper\chronikeeper\tests\test_environment_basic.py", line 46, in main
+    env.update(world_state=ws, map_manager=mm)
+TypeError: EnvironmentEngine.update() got an unexpected keyword argument 'map_manager'

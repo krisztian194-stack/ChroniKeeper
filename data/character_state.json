@@ -1,0 +1,27 @@
+{
+  "theme": "default",
+  "relationships": {},
+  "memory": {},
+  "npcs": {
+    "Aiden": {
+      "occupation": "technician",
+      "shift": "day",
+      "mood": 0.4450442683935932,
+      "last_seen": "2025-11-01T20:17:50.962811"
+    },
+    "Bella": {
+      "occupation": "teacher",
+      "shift": "morning",
+      "mood": 0.4292292750755594,
+      "last_seen": "2025-11-01T20:17:50.962811"
+    },
+    "Carlos": {
+      "occupation": "student",
+      "shift": "afternoon",
+      "mood": 0.4668169218180288,
+      "last_seen": "2025-11-01T20:17:50.962811"
+    }
+  },
+  "session": [],
+  "last_update": "2025-11-01T20:17:50.962811"
+}

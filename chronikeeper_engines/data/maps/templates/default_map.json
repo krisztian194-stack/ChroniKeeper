@@ -1,0 +1,18 @@
+{
+  "A1": {"region": "suburb"},
+  "A2": {"region": "urban_core"},
+  "B1": {"region": "industrial"},
+  "B2": {"region": "harbor"},
+  "C1": {"region": "rural_low"},
+  "C2": {"region": "slum"},
+  "HOME_PLAYER": {"region": "suburb"},
+
+  "regions": {
+    "suburb":        {"type": "residential", "light_pollution": 0.3, "comfort_mod": 0.1,  "noise_mod": 0.1},
+    "urban_core":    {"type": "city",        "light_pollution": 0.8, "comfort_mod": -0.1, "noise_mod": 0.3},
+    "industrial":    {"type": "factory",     "light_pollution": 0.6, "comfort_mod": -0.2, "noise_mod": 0.5},
+    "harbor":        {"type": "port",        "light_pollution": 0.5, "comfort_mod": -0.1, "noise_mod": 0.4},
+    "rural_low":     {"type": "village",     "light_pollution": 0.1, "comfort_mod": 0.2,  "noise_mod": 0.0},
+    "slum":          {"type": "poor",        "light_pollution": 0.4, "comfort_mod": -0.3, "noise_mod": 0.5}
+  }
+}

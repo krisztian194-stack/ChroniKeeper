@@ -1,0 +1,19 @@
+body {
+  background-color: #111;
+  color: #ddd;
+  font-family: Consolas, monospace;
+  margin: 2rem;
+}
+button {
+  background: #444;
+  border: 1px solid #666;
+  padding: 0.5rem 1rem;
+  color: #ddd;
+  cursor: pointer;
+}
+pre {
+  background: #1b1b1b;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}

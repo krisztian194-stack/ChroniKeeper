@@ -1,0 +1,1 @@
+[WARN] test_world_state has no main() function.

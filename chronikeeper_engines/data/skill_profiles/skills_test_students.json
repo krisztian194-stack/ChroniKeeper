@@ -1,0 +1,34 @@
+{
+  "students": [
+    {
+      "name": "Aiden",
+      "difficulty": "easy",
+      "learning_profile": "gifted",
+      "description": "Fast learner, quick decay."
+    },
+    {
+      "name": "Bella",
+      "difficulty": "normal",
+      "learning_profile": "methodical",
+      "description": "Average learner, slow decay."
+    },
+    {
+      "name": "Carlos",
+      "difficulty": "hard",
+      "learning_profile": "baseline",
+      "description": "Learns slowly, steady retention."
+    },
+    {
+      "name": "Diana",
+      "difficulty": "mastery",
+      "learning_profile": "lazy",
+      "description": "Hard worker with slow start, struggles to stay focused."
+    },
+    {
+      "name": "Ethan",
+      "difficulty": "hard",
+      "learning_profile": "absent_minded",
+      "description": "Talented but forgetful."
+    }
+  ]
+}

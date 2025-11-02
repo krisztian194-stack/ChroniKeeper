@@ -1,0 +1,6 @@
+{
+  "easy":  { "max_skill_cap": 0.7, "relearning_rate": 1.2, "daily_variance": 0.05 },
+  "normal":{ "max_skill_cap": 0.85, "relearning_rate": 1.0, "daily_variance": 0.03 },
+  "hard":  { "max_skill_cap": 0.95, "relearning_rate": 0.8, "daily_variance": 0.02 },
+  "mastery": { "max_skill_cap": 1.0, "relearning_rate": 0.6, "daily_variance": 0.01 }
+}

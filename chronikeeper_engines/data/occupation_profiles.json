@@ -1,0 +1,50 @@
+{
+  "schedules": {
+    "day_worker":   {"work_days": 5, "rest_days": 2, "day_start": 8, "day_end": 17, "break_profile": "modern"},
+    "early_worker": {"work_days": 6, "rest_days": 1, "day_start": 5, "day_end": 14, "break_profile": "medieval"},
+    "rotating":     {"work_days": 6, "rest_days": 1, "shift_count": 3, "shift_rotation_days": 2, "break_profile": "industrial"},
+    "flexible":     {"work_days": 5, "rest_days": 2, "flexible": true, "break_profile": "futuristic"},
+    "domestic":     {"work_days": 7, "rest_days": 0, "day_start": 6, "day_end": 21, "flexible": true, "break_profile": "home"}
+  },
+
+  "break_profiles": {
+    "medieval": {
+      "pattern": [[10.0, 0.5, "meal"], [13.0, 1.5, "siesta"], [18.0, 1.0, "meal"]],
+      "behavior": "light_based"
+    },
+    "mediterranean": {
+      "pattern": [[11.0, 0.5, "meal"], [15.0, 1.0, "siesta"], [20.0, 0.5, "meal"]],
+      "behavior": "late_shift"
+    },
+    "industrial": {
+      "pattern": [[12.0, 0.5, "meal"]],
+      "behavior": "strict"
+    },
+    "modern": {
+      "pattern": [[12.5, 0.3, "meal"], [15.5, 0.1, "coffee"]],
+      "behavior": "timed"
+    },
+    "futuristic": {
+      "pattern": [[11.0, 1.0, "meal"], [16.0, 0.7, "social"]],
+      "behavior": "social"
+    },
+    "home": {
+      "pattern": [[9.0, 0.5, "meal"], [13.0, 1.0, "meal"], [18.0, 1.0, "meal"]],
+      "behavior": "domestic"
+    }
+  },
+
+  "occupations": {
+    "default":      {"schedule": "day_worker"},
+    "farmer":       {"schedule": "early_worker"},
+    "guard":        {"schedule": "rotating"},
+    "merchant":     {"schedule": "day_worker"},
+    "house_spouse": {"schedule": "domestic", "caregiver": true},
+    "parent":       {"schedule": "domestic", "childcare_focus": true},
+    "student":      {"schedule": "day_worker", "learning_bias": true, "day_start": 7, "day_end": 16},
+    "writer":       {"schedule": "flexible"},
+    "home_worker":  {"schedule": "flexible"},
+    "retired":      {"schedule": "flexible", "randomized_activity": true},
+    "unemployed":   {"schedule": "flexible", "randomized_activity": true}
+  }
+}

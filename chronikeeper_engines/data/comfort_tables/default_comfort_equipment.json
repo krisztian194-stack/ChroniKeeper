@@ -1,0 +1,6 @@
+{
+  "equipment": {
+    "light_sources": { "flashlight": 0.2, "lamp": 0.2 },
+    "comfort_items": { "blanket": 0.1, "music": 0.15 }
+  }
+}
